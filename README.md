@@ -1,0 +1,3 @@
+# swocc
+Swift to Objective-C to C example code
+Not complete thanks to Github BUG - will try and fix...
