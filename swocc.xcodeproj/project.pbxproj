@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB470C941AE3CD7900D518A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB470C931AE3CD7900D518A4 /* AppDelegate.swift */; };
+		FB470C971AE3CD7900D518A4 /* swocc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB470C951AE3CD7900D518A4 /* swocc.xcdatamodeld */; };
+		FB470C991AE3CD7900D518A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB470C981AE3CD7900D518A4 /* ViewController.swift */; };
+		FB470C9C1AE3CD7900D518A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB470C9A1AE3CD7900D518A4 /* Main.storyboard */; };
+		FB470C9E1AE3CD7900D518A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB470C9D1AE3CD7900D518A4 /* Images.xcassets */; };
+		FB470CA11AE3CD7900D518A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB470C9F1AE3CD7900D518A4 /* LaunchScreen.xib */; };
+		FB470CAD1AE3CD7900D518A4 /* swoccTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB470CAC1AE3CD7900D518A4 /* swoccTests.swift */; };
+		FB470CB81AE3CDAB00D518A4 /* OCC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB470CB71AE3CDAB00D518A4 /* OCC.m */; };
+		FB470CBC1AE3DB1A00D518A4 /* chop.c in Sources */ = {isa = PBXBuildFile; fileRef = FB470CBA1AE3DB1A00D518A4 /* chop.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB470CA71AE3CD7900D518A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB470C861AE3CD7900D518A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB470C8D1AE3CD7900D518A4;
+			remoteInfo = swocc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB470C8E1AE3CD7900D518A4 /* swocc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swocc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB470C921AE3CD7900D518A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB470C931AE3CD7900D518A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB470C961AE3CD7900D518A4 /* swocc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swocc.xcdatamodel; sourceTree = "<group>"; };
+		FB470C981AE3CD7900D518A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB470C9B1AE3CD7900D518A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB470C9D1AE3CD7900D518A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FB470CA01AE3CD7900D518A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FB470CA61AE3CD7900D518A4 /* swoccTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swoccTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB470CAB1AE3CD7900D518A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB470CAC1AE3CD7900D518A4 /* swoccTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swoccTests.swift; sourceTree = "<group>"; };
+		FB470CB61AE3CDAB00D518A4 /* swocc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swocc-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB470CB71AE3CDAB00D518A4 /* OCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCC.m; sourceTree = "<group>"; };
+		FB470CB91AE3CDFD00D518A4 /* OCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCC.h; sourceTree = "<group>"; };
+		FB470CBA1AE3DB1A00D518A4 /* chop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chop.c; sourceTree = "<group>"; };
+		FB470CBB1AE3DB1A00D518A4 /* chop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chop.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB470C8B1AE3CD7900D518A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB470CA31AE3CD7900D518A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB470C851AE3CD7800D518A4 = {
+			isa = PBXGroup;
+			children = (
+				FB470C901AE3CD7900D518A4 /* swocc */,
+				FB470CA91AE3CD7900D518A4 /* swoccTests */,
+				FB470C8F1AE3CD7900D518A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB470C8F1AE3CD7900D518A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB470C8E1AE3CD7900D518A4 /* swocc.app */,
+				FB470CA61AE3CD7900D518A4 /* swoccTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB470C901AE3CD7900D518A4 /* swocc */ = {
+			isa = PBXGroup;
+			children = (
+				FB470C931AE3CD7900D518A4 /* AppDelegate.swift */,
+				FB470C981AE3CD7900D518A4 /* ViewController.swift */,
+				FB470C9A1AE3CD7900D518A4 /* Main.storyboard */,
+				FB470C9D1AE3CD7900D518A4 /* Images.xcassets */,
+				FB470C9F1AE3CD7900D518A4 /* LaunchScreen.xib */,
+				FB470C951AE3CD7900D518A4 /* swocc.xcdatamodeld */,
+				FB470C911AE3CD7900D518A4 /* Supporting Files */,
+				FB470CB71AE3CDAB00D518A4 /* OCC.m */,
+				FB470CB91AE3CDFD00D518A4 /* OCC.h */,
+				FB470CB61AE3CDAB00D518A4 /* swocc-Bridging-Header.h */,
+				FB470CBA1AE3DB1A00D518A4 /* chop.c */,
+				FB470CBB1AE3DB1A00D518A4 /* chop.h */,
+			);
+			path = swocc;
+			sourceTree = "<group>";
+		};
+		FB470C911AE3CD7900D518A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB470C921AE3CD7900D518A4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB470CA91AE3CD7900D518A4 /* swoccTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB470CAC1AE3CD7900D518A4 /* swoccTests.swift */,
+				FB470CAA1AE3CD7900D518A4 /* Supporting Files */,
+			);
+			path = swoccTests;
+			sourceTree = "<group>";
+		};
+		FB470CAA1AE3CD7900D518A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB470CAB1AE3CD7900D518A4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB470C8D1AE3CD7900D518A4 /* swocc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB470CB01AE3CD7900D518A4 /* Build configuration list for PBXNativeTarget "swocc" */;
+			buildPhases = (
+				FB470C8A1AE3CD7900D518A4 /* Sources */,
+				FB470C8B1AE3CD7900D518A4 /* Frameworks */,
+				FB470C8C1AE3CD7900D518A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swocc;
+			productName = swocc;
+			productReference = FB470C8E1AE3CD7900D518A4 /* swocc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB470CA51AE3CD7900D518A4 /* swoccTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB470CB31AE3CD7900D518A4 /* Build configuration list for PBXNativeTarget "swoccTests" */;
+			buildPhases = (
+				FB470CA21AE3CD7900D518A4 /* Sources */,
+				FB470CA31AE3CD7900D518A4 /* Frameworks */,
+				FB470CA41AE3CD7900D518A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB470CA81AE3CD7900D518A4 /* PBXTargetDependency */,
+			);
+			name = swoccTests;
+			productName = swoccTests;
+			productReference = FB470CA61AE3CD7900D518A4 /* swoccTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB470C861AE3CD7900D518A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Richard West";
+				TargetAttributes = {
+					FB470C8D1AE3CD7900D518A4 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					FB470CA51AE3CD7900D518A4 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = FB470C8D1AE3CD7900D518A4;
+					};
+				};
+			};
+			buildConfigurationList = FB470C891AE3CD7900D518A4 /* Build configuration list for PBXProject "swocc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB470C851AE3CD7800D518A4;
+			productRefGroup = FB470C8F1AE3CD7900D518A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB470C8D1AE3CD7900D518A4 /* swocc */,
+				FB470CA51AE3CD7900D518A4 /* swoccTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB470C8C1AE3CD7900D518A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB470C9C1AE3CD7900D518A4 /* Main.storyboard in Resources */,
+				FB470CA11AE3CD7900D518A4 /* LaunchScreen.xib in Resources */,
+				FB470C9E1AE3CD7900D518A4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB470CA41AE3CD7900D518A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB470C8A1AE3CD7900D518A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB470CBC1AE3DB1A00D518A4 /* chop.c in Sources */,
+				FB470C991AE3CD7900D518A4 /* ViewController.swift in Sources */,
+				FB470CB81AE3CDAB00D518A4 /* OCC.m in Sources */,
+				FB470C941AE3CD7900D518A4 /* AppDelegate.swift in Sources */,
+				FB470C971AE3CD7900D518A4 /* swocc.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB470CA21AE3CD7900D518A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB470CAD1AE3CD7900D518A4 /* swoccTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB470CA81AE3CD7900D518A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB470C8D1AE3CD7900D518A4 /* swocc */;
+			targetProxy = FB470CA71AE3CD7900D518A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB470C9A1AE3CD7900D518A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB470C9B1AE3CD7900D518A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB470C9F1AE3CD7900D518A4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB470CA01AE3CD7900D518A4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB470CAE1AE3CD7900D518A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB470CAF1AE3CD7900D518A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB470CB11AE3CD7900D518A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = swocc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swocc/swocc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB470CB21AE3CD7900D518A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = swocc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swocc/swocc-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		FB470CB41AE3CD7900D518A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = swoccTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swocc.app/swocc";
+			};
+			name = Debug;
+		};
+		FB470CB51AE3CD7900D518A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = swoccTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swocc.app/swocc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB470C891AE3CD7900D518A4 /* Build configuration list for PBXProject "swocc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB470CAE1AE3CD7900D518A4 /* Debug */,
+				FB470CAF1AE3CD7900D518A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB470CB01AE3CD7900D518A4 /* Build configuration list for PBXNativeTarget "swocc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB470CB11AE3CD7900D518A4 /* Debug */,
+				FB470CB21AE3CD7900D518A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB470CB31AE3CD7900D518A4 /* Build configuration list for PBXNativeTarget "swoccTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB470CB41AE3CD7900D518A4 /* Debug */,
+				FB470CB51AE3CD7900D518A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB470C951AE3CD7900D518A4 /* swocc.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB470C961AE3CD7900D518A4 /* swocc.xcdatamodel */,
+			);
+			currentVersion = FB470C961AE3CD7900D518A4 /* swocc.xcdatamodel */;
+			path = swocc.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FB470C861AE3CD7900D518A4 /* Project object */;
+}
