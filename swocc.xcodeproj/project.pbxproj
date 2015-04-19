@@ -14,6 +14,8 @@
 		FB470C9E1AE3CD7900D518A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB470C9D1AE3CD7900D518A4 /* Images.xcassets */; };
 		FB470CA11AE3CD7900D518A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB470C9F1AE3CD7900D518A4 /* LaunchScreen.xib */; };
 		FB470CAD1AE3CD7900D518A4 /* swoccTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB470CAC1AE3CD7900D518A4 /* swoccTests.swift */; };
+		FB470CB81AE3CDAB00D518A4 /* OCC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB470CB71AE3CDAB00D518A4 /* OCC.m */; };
+		FB470CBC1AE3DB1A00D518A4 /* chop.c in Sources */ = {isa = PBXBuildFile; fileRef = FB470CBA1AE3DB1A00D518A4 /* chop.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,11 @@
 		FB470CA61AE3CD7900D518A4 /* swoccTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swoccTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB470CAB1AE3CD7900D518A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB470CAC1AE3CD7900D518A4 /* swoccTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swoccTests.swift; sourceTree = "<group>"; };
+		FB470CB61AE3CDAB00D518A4 /* swocc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swocc-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB470CB71AE3CDAB00D518A4 /* OCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCC.m; sourceTree = "<group>"; };
+		FB470CB91AE3CDFD00D518A4 /* OCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCC.h; sourceTree = "<group>"; };
+		FB470CBA1AE3DB1A00D518A4 /* chop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chop.c; sourceTree = "<group>"; };
+		FB470CBB1AE3DB1A00D518A4 /* chop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chop.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +93,11 @@
 				FB470C9F1AE3CD7900D518A4 /* LaunchScreen.xib */,
 				FB470C951AE3CD7900D518A4 /* swocc.xcdatamodeld */,
 				FB470C911AE3CD7900D518A4 /* Supporting Files */,
+				FB470CB71AE3CDAB00D518A4 /* OCC.m */,
+				FB470CB91AE3CDFD00D518A4 /* OCC.h */,
+				FB470CB61AE3CDAB00D518A4 /* swocc-Bridging-Header.h */,
+				FB470CBA1AE3DB1A00D518A4 /* chop.c */,
+				FB470CBB1AE3DB1A00D518A4 /* chop.h */,
 			);
 			path = swocc;
 			sourceTree = "<group>";
@@ -215,7 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB470CBC1AE3DB1A00D518A4 /* chop.c in Sources */,
 				FB470C991AE3CD7900D518A4 /* ViewController.swift in Sources */,
+				FB470CB81AE3CDAB00D518A4 /* OCC.m in Sources */,
 				FB470C941AE3CD7900D518A4 /* AppDelegate.swift in Sources */,
 				FB470C971AE3CD7900D518A4 /* swocc.xcdatamodeld in Sources */,
 			);
@@ -279,6 +293,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -324,6 +339,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -346,9 +362,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = swocc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swocc/swocc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -356,9 +376,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = swocc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swocc/swocc-Bridging-Header.h";
 			};
 			name = Release;
 		};
